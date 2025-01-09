@@ -1,0 +1,28 @@
+{
+    "scooters" : [
+        {
+            "id": "1",
+            "name": "KS E22",
+            "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.shutterstock.com%2Fsearch%2Felectric-scooter-3d&psig=AOvVaw0pFj8hAbmqqZCH2Z24uHyZ&ust=1736485300038000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKiL08nt54oDFQAAAAAdAAAAABAZ",
+            "cost": "1049.99$",
+            "discount": "949.99$",
+            "maxSpeed": "20 km/h",
+            "maxDistance":"20km",
+            "battery": "5100 mAh",
+            "chargingTime":"3.5 hours",
+            "weight":"13.5 kg"
+        },
+        {
+            "id": "2",
+            "name": "KW F22",
+            "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.shutterstock.com%2Fsearch%2Felectric-scooter-3d&psig=AOvVaw0pFj8hAbmqqZCH2Z24uHyZ&ust=1736485300038000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKiL08nt54oDFQAAAAAdAAAAABAZ",
+            "cost": "1199.99$",
+            "discount": "1049.99$",
+            "maxSpeed": "20 km/h",
+            "maxDistance":"20km",
+            "battery": "5100 mAh",
+            "chargingTime":"3.5 hours",
+            "weight":"13.5 kg"
+        }
+    ]
+}
