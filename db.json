@@ -3,7 +3,7 @@
         {
             "id": "1",
             "name": "KS E22",
-            "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.shutterstock.com%2Fsearch%2Felectric-scooter-3d&psig=AOvVaw0pFj8hAbmqqZCH2Z24uHyZ&ust=1736485300038000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKiL08nt54oDFQAAAAAdAAAAABAZ",
+            "image": "http://localhost:5173/src/assets/images/image17.svg",
             "cost": "1049.99$",
             "discount": "949.99$",
             "maxSpeed": "20 km/h",
@@ -15,7 +15,7 @@
         {
             "id": "2",
             "name": "KW F22",
-            "image": "http://localhost:5173/src/assets/images/heroimg.png",
+            "image": "http://localhost:5173/src/assets/images/image1.svg",
             "cost": "1199.99$",
             "discount": "1049.99$",
             "maxSpeed": "20 km/h",
@@ -23,6 +23,126 @@
             "battery": "5100 mAh",
             "chargingTime":"3.5 hours",
             "weight":"13.5 kg"
+        },
+        {
+            "id": "3",
+            "name": "KS F30",
+            "image": "http://localhost:5173/src/assets/images/image13.svg",
+            "cost": "1499.99$",
+            "discount": "1159.99$",
+            "maxSpeed": "25 km/h",
+            "maxDistance":"30km",
+            "battery": "7650 mAh",
+            "chargingTime":"5 hours",
+            "weight":"15.1 kg"
+        },
+        {
+            "id": "4",
+            "name": "KS F30",
+            "image": "http://localhost:5173/src/assets/images/image13.svg",
+            "cost": "1499.99$",
+            "discount": "1159.99$",
+            "maxSpeed": "25 km/h",
+            "maxDistance":"30km",
+            "battery": "7650 mAh",
+            "chargingTime":"5 hours",
+            "weight":"15.1 kg"
+        },
+        {
+            "id": "5",
+            "name": "KS F30",
+            "image": "http://localhost:5173/src/assets/images/image13.svg",
+            "cost": "1499.99$",
+            "discount": "1159.99$",
+            "maxSpeed": "25 km/h",
+            "maxDistance":"30km",
+            "battery": "7650 mAh",
+            "chargingTime":"5 hours",
+            "weight":"15.1 kg"
+        },
+        {
+            "id": "6",
+            "name": "KS F30",
+            "image": "http://localhost:5173/src/assets/images/image13.svg",
+            "cost": "1499.99$",
+            "discount": "1159.99$",
+            "maxSpeed": "25 km/h",
+            "maxDistance":"30km",
+            "battery": "7650 mAh",
+            "chargingTime":"5 hours",
+            "weight":"15.1 kg"
+        },
+        {
+            "id": "7",
+            "name": "KS F30",
+            "image": "http://localhost:5173/src/assets/images/image13.svg",
+            "cost": "1499.99$",
+            "discount": "1159.99$",
+            "maxSpeed": "25 km/h",
+            "maxDistance":"30km",
+            "battery": "7650 mAh",
+            "chargingTime":"5 hours",
+            "weight":"15.1 kg"
+        },
+        {
+            "id": "8",
+            "name": "KS F30",
+            "image": "http://localhost:5173/src/assets/images/image13.svg",
+            "cost": "1499.99$",
+            "discount": "1159.99$",
+            "maxSpeed": "25 km/h",
+            "maxDistance":"30km",
+            "battery": "7650 mAh",
+            "chargingTime":"5 hours",
+            "weight":"15.1 kg"
+        },
+        {
+            "id": "9",
+            "name": "KS F30",
+            "image": "http://localhost:5173/src/assets/images/image13.svg",
+            "cost": "1499.99$",
+            "discount": "1159.99$",
+            "maxSpeed": "25 km/h",
+            "maxDistance":"30km",
+            "battery": "7650 mAh",
+            "chargingTime":"5 hours",
+            "weight":"15.1 kg"
+        },
+        {
+            "id": "10",
+            "name": "KS ES 3",
+            "image": "http://localhost:5173/src/assets/images/image3.svg",
+            "cost": "1099.99$",
+            "discount": "879.99$",
+            "maxSpeed": "25 km/h",
+            "maxDistance":"25km",
+            "battery": "5650 mAh",
+            "chargingTime":"6 hours",
+            "weight":"12.1 kg"
+        },
+        {
+            "id": "11",
+            "name": "EKS E12",
+            "image": "http://localhost:5173/src/assets/images/image13.svg",
+            "cost": "899.99$",
+            "discount": "599.99$",
+            "maxSpeed": "20 km/h",
+            "maxDistance":"20km",
+            "battery": "3540 mAh",
+            "chargingTime":"6.5 hours",
+            "weight":"14.1 kg"
+        },
+        {
+            "id": "12",
+            "name": "KS ES 4",
+            "image": "http://localhost:5173/src/assets/images/image6.svg",
+            "cost": "999.99$",
+            "discount": "859.99$",
+            "maxSpeed": "30 km/h",
+            "maxDistance":"45 km",
+            "battery": "374 mAh",
+            "chargingTime":"7 hours",
+            "weight":"14 kg"
         }
     ]
 }

@@ -25,7 +25,7 @@ const Scooters: React.FC<ScootersProps> = ({ setSelectedScooter }) => {
     })
 
     return (
-        <ul className="flex items-center">
+        <ul className="flex items-center flex-wrap">
             {scooters.map((item: ScooterType) => (
                 <li key={item.id} className="w-[137px] pt-[9px] px-[31px] pb-[14px] text-center cursor-pointer rounded hover:bg-gray-700"
                     onClick={() => setSelectedScooter(item)}>
