@@ -1,7 +1,7 @@
 import { Route, Routes } from 'react-router-dom'
-import Header from '../components/Header'
 import Home from '../pages/Home'
 import Basket from '../pages/Basket'
+import Header from '../components/sections/Header'
 
 const CustomRoutes = () => {
     return (

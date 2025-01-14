@@ -2,12 +2,12 @@ import { useState } from "react";
 import Scooters, { ScooterType } from "../service/Scooters";
 import gift from '../assets/images/gift.png'
 import { Charge, Delivery, Miles, Support, Warranty } from "../assets/Icons";
+import Packing from "../components/sections/Packing";
+import Accessories from "../components/sections/Accessories";
 
 const Home = () => {
   const [selectedScooter, setSelectedScooter] = useState<ScooterType | null>(null)
 
-  console.log(selectedScooter);
-  
   return (
     <div className="">
       <div className="px-[210px] bg-gray-600">
@@ -45,6 +45,7 @@ const Home = () => {
           <img src={selectedScooter.image} alt="scooter img" width={432} height={687}/>
         </div>
       )}
+      {/* Selected scooter information part */}
       <div className="px-[210px] mt-[47px] mb-[75px]">
         <ul className="flex items-center justify-between">
           <li className="w-[178px] flex items-center gap-[20px]">
@@ -72,6 +73,8 @@ const Home = () => {
           <div className=""><Miles/></div>
         </div>
       </div>
+      <section><Packing/></section>
+      <section><Accessories/></section>
     </div>
   );
 };

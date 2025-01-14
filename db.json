@@ -144,5 +144,49 @@
             "chargingTime":"7 hours",
             "weight":"14 kg"
         }
+    ],
+    "accessories": [
+        {
+            "id": "1",
+            "image": "http://localhost:5173/src/assets/accessories/ninebot.svg",
+            "name": "NineboT Engine Speaker",
+            "description": "The built-in engine sound simulation system can simulate the realistic engine roar based on the vehicle's accelerator, brake, speed, and other signals",
+            "price":"$149.99"
+        },
+        {
+            "id": "2",
+            "image": "http://localhost:5173/src/assets/accessories/phoneholder.svg",
+            "name": "Segway Phone Holder",
+            "description": "The dual screw, non-slip design offers ultimate security and versatility. The phone holder is applicable to multiple vehicle series.",
+            "price":"$29.99"
+        },
+        {
+            "id": "3",
+            "image": "http://localhost:5173/src/assets/accessories/protect.svg",
+            "name": "Segway Protective Gear Set",
+            "description": "The curved, streamlined design of the helmet shell, coupled with the thick, high-quality fabrics create a helmet that is stylish, protective and comfortable to wear.",
+            "price":"$29.99"
+        },
+        {
+            "id": "4",
+            "image": "http://localhost:5173/src/assets/accessories/backpack.svg",
+            "name": "Ninebot Leisure Backpack",
+            "description": "The Ninebot leisure backpack adopts a stylish gray-yellow color contrast, adding a trendy accessory to your wardrobe.",
+            "price":"$69.99"
+        },
+        {
+            "id": "5",
+            "image": "http://localhost:5173/src/assets/accessories/batery.svg",
+            "name": "Segway External Battery",
+            "description": " It is easy to install and increases the range of the ES1, ES2 & E22 to 27.9, 28 and 27 miles respectively and It also increases the speed",
+            "price":"$249.99"
+        },
+        {
+            "id": "6",
+            "image": "http://localhost:5173/src/assets/accessories/charger.svg",
+            "name": "Segway Charger",
+            "description": "Whether at home, the office, or on your KickScooter journey, this Ninebot KickScooter by Segway Charger is designed to provide a safe and stable charge anytime, anywhere.",
+            "price":"$79.99"
+        }
     ]
 }

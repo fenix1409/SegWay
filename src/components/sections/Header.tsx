@@ -1,6 +1,6 @@
 import { Link, NavLink } from 'react-router-dom'
-import { Basket, Instagram, Logo } from '../assets/Icons'
-import Profile from '../assets/images/profile.svg'
+import { Basket, Instagram, Logo } from '../../assets/Icons'
+import Profile from '../../assets/images/profile.svg'
 
 const Header = () => {
     return (
