@@ -1,5 +1,5 @@
 import React from "react";
-import { ScooterType } from "../service/Scooters";
+import { ScooterType } from "../../service/Scooters";
 
 interface ScooterCardType {
   item: ScooterType;
