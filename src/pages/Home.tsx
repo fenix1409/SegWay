@@ -5,17 +5,12 @@ import { Charge, Delivery, Miles, Support, Warranty } from "../assets/Icons";
 import Packing from "../components/sections/Packing";
 import Accessories from "../components/sections/Accessories";
 import { useDispatch } from "react-redux";
-import toast, { Toaster } from "react-hot-toast";
+import { Toaster } from "react-hot-toast";
 import { saveOrderScooters } from "../store/basketSlice";
 
 const Home = () => {
   const [selectedScooter, setSelectedScooter] = useState<ScooterType | null>(null)
   const dispatch = useDispatch()
-  
-  function handleSaveBtn() {
-    toast.success('Successfully saved!')
-    dispatch(saveOrderScooters(selectedScooter))
-  }
   
   return (
     <div className="">
@@ -48,7 +43,7 @@ const Home = () => {
               </div>
               <div className="flex items-center justify-between">
                 <button className="text-[18px] leading-[21px] font-bold text-white bg-[#009EFF] w-[239px] text-center py-[10px] uppercase">BUY IT Now</button>
-                <button onClick={handleSaveBtn} className="text-[18px] leading-[21px] font-bold text-white bg-[#009EFF] w-[239px] text-center py-[10px]">ADD TO CART</button>
+                <button onClick={() => dispatch(saveOrderScooters(selectedScooter))} className="text-[18px] leading-[21px] font-bold text-white bg-[#009EFF] w-[239px] text-center py-[10px]">ADD TO CART</button>
               </div>
             </div>
           </div>
