@@ -1,8 +1,10 @@
-import { Link, NavLink } from 'react-router-dom'
+"use client"
+import { Link, NavLink, useNavigate } from 'react-router-dom'
 import { Basket, Instagram, Logo } from '../../assets/Icons'
 import Profile from '../../assets/images/profile.svg'
 
 const Header = () => {
+    const navigate = useNavigate()
     return (
         <div className="flex flex-col">
             <div className='flex items-center justify-between bg-[#323941] px-[210px] py-[11px]'>
@@ -30,7 +32,7 @@ const Header = () => {
                 </div>
             </div>
             <div className="flex items-center justify-between px-[210px] py-[11px]">
-                <div><Logo/></div>
+                <button onClick={() => navigate('/')}><Logo/></button>
                 <div className="flex items-center gap-[13px]">
                     <img src={Profile} alt="image" width={63} height={63}/>
                     <div className="w-[100px] flex flex-col">
