@@ -10,8 +10,15 @@ import { saveOrderScooters } from "../store/basketSlice";
 
 const Home = () => {
   const [selectedScooter, setSelectedScooter] = useState<ScooterType | null>(null)
+  const [saved, setSaved] = useState<string[]>([])
   const dispatch = useDispatch()
+
+  function handleSave(selectedScooter:ScooterType){
+    dispatch(saveOrderScooters(selectedScooter))
+    setSaved([...saved, selectedScooter.id])
+  }
   
+  localStorage.setItem('products', JSON.stringify(selectedScooter))
   return (
     <div className="">
       <Toaster position="top-center" reverseOrder={false}/>
@@ -43,7 +50,9 @@ const Home = () => {
               </div>
               <div className="flex items-center justify-between">
                 <button className="text-[18px] leading-[21px] font-bold text-white bg-[#009EFF] w-[239px] text-center py-[10px] uppercase">BUY IT Now</button>
-                <button onClick={() => dispatch(saveOrderScooters(selectedScooter))} className="text-[18px] leading-[21px] font-bold text-white bg-[#009EFF] w-[239px] text-center py-[10px]">ADD TO CART</button>
+                <button onClick={() => handleSave(selectedScooter)} className="text-[18px] leading-[21px] font-bold text-white bg-[#009EFF] w-[239px] text-center py-[10px]">
+                  {saved.includes(selectedScooter.id) ? "SAVED" : "ADD TO CART"}
+                </button>
               </div>
             </div>
           </div>
