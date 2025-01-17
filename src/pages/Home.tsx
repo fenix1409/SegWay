@@ -7,6 +7,7 @@ import Accessories from "../components/sections/Accessories";
 import { useDispatch } from "react-redux";
 import { Toaster } from "react-hot-toast";
 import { saveOrderScooters } from "../store/basketSlice";
+import Feature from "../components/sections/Feature";
 
 const Home = () => {
   const [selectedScooter, setSelectedScooter] = useState<ScooterType | null>(null)
@@ -89,6 +90,7 @@ const Home = () => {
       </div>
       <section><Packing /></section>
       <section><Accessories /></section>
+      <section><Feature/></section>
     </div>
   );
 };
