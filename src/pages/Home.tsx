@@ -10,6 +10,7 @@ import { saveOrderScooters } from "../store/basketSlice";
 import Feature from "../components/sections/Feature";
 import Smart from "../components/sections/Smart";
 import Manual from "../components/sections/Manual";
+import Compare from "../components/sections/Compare";
 
 const Home = () => {
   const [selectedScooter, setSelectedScooter] = useState<ScooterType | null>(null)
@@ -95,6 +96,7 @@ const Home = () => {
       <section><Feature/></section>
       <section><Smart/></section>
       <section><Manual/></section>
+      <section><Compare/></section>
     </div>
   );
 };
