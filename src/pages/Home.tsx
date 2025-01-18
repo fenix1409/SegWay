@@ -11,6 +11,7 @@ import Feature from "../components/sections/Feature";
 import Smart from "../components/sections/Smart";
 import Manual from "../components/sections/Manual";
 import Compare from "../components/sections/Compare";
+import Review from "../components/sections/Review";
 
 const Home = () => {
   const [selectedScooter, setSelectedScooter] = useState<ScooterType | null>(null)
@@ -97,6 +98,7 @@ const Home = () => {
       <section><Smart/></section>
       <section><Manual/></section>
       <section><Compare/></section>
+      <section><Review/></section>
     </div>
   );
 };
