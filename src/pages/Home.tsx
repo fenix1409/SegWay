@@ -9,6 +9,7 @@ import { Toaster } from "react-hot-toast";
 import { saveOrderScooters } from "../store/basketSlice";
 import Feature from "../components/sections/Feature";
 import Smart from "../components/sections/Smart";
+import Manual from "../components/sections/Manual";
 
 const Home = () => {
   const [selectedScooter, setSelectedScooter] = useState<ScooterType | null>(null)
@@ -93,6 +94,7 @@ const Home = () => {
       <section><Accessories /></section>
       <section><Feature/></section>
       <section><Smart/></section>
+      <section><Manual/></section>
     </div>
   );
 };
