@@ -9,7 +9,6 @@ const ScooterSwipe = () => {
     })
 
     const limitedScooters = scooters.slice(0,4)
-    console.log(limitedScooters);
     
     return (
         <ul className="flex items-end justify-between">

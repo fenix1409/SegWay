@@ -12,6 +12,9 @@ import Smart from "../components/sections/Smart";
 import Manual from "../components/sections/Manual";
 import Compare from "../components/sections/Compare";
 import Review from "../components/sections/Review";
+import Control from "../components/sections/Control";
+import Others from "../components/sections/Others";
+import Footer from "../components/sections/Footer";
 
 const Home = () => {
   const [selectedScooter, setSelectedScooter] = useState<ScooterType | null>(null)
@@ -25,7 +28,7 @@ const Home = () => {
   
   localStorage.setItem('products', JSON.stringify(selectedScooter))
   return (
-    <div className="">
+    <div className="bg-white">
       <Toaster position="top-center" reverseOrder={false}/>
       <div className="px-[210px] bg-gray-600">
         <Scooters setSelectedScooter={setSelectedScooter} />
@@ -99,6 +102,9 @@ const Home = () => {
       <section><Manual/></section>
       <section><Compare/></section>
       <section><Review/></section>
+      <section><Control/></section>
+      <section><Others/></section>
+      <section><Footer/></section>
     </div>
   );
 };
