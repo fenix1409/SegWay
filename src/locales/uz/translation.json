@@ -44,5 +44,21 @@
     "Check out the entire line of Segway scooters": "Segway skuterlarining butun qatorini ko'rib chiqing",
     "SEE MORE": "YANA",
     "Packing List": "O'rama bo'yicha hisob-kitob hujjati",
-    "REviews": "Sharhlar"
+    "REviews": "Sharhlar",
+    "Smart battery Management system (Smart-BMS)": "Aqlli batareya boshqaruv tizimi (Aqlli-BMS)",
+    "The Smart-BMS closely monitors the battery status with multiple protection mechanisms to ensure the battery durability": "Smart-BMS batareyaning mustahkamligini ta'minlash uchun bir nechta himoya mexanizmlari bilan batareya holatini yaqindan kuzatib boradi",
+    "Dual Breaking System": "Ikki tomonlama tormoz tizimi",
+    "Simultaneous mechanical front drum brake and regenerative electric back brake provide both stability and steerability.": "Bir vaqtning o'zida mexanik oldingi baraban tormozi va regenerativ elektr orqa tormoz ham barqarorlikni, ham boshqaruvni ta'minlaydi.",
+    "*IPX5 water resistance": "*IPX5 suvga chidamlilik",
+    "Built-In Front LED Light": "Old LED chiroqlar bilan jihozlangan",
+    "Front-facing lights are designed with 2.5w high-brightness LED light to illuminate the path ahead of you and increase your visibility to others around you.": "Oldinga qaragan yoritgichlar oldingizda turgan yo'lni yoritish va atrofingizdagilarga ko'rinishingizni oshirish uchun 2,5 Vt yuqori yorqinlikdagi LED yorug'lik bilan yaratilgan.",
+    "*Disclaimer: for your safety, please try not to ride at night": "* Ogohlantirish: Xavfsizligingiz uchun kechasi minmaslikka harakat qiling",
+    "One-step Folding Mechanism": "Bir bosqichli katlama mexanizmi",
+    "Ninebot KickScooter MAX can be easily folded and carried around in 3 seconds.": "Ninebot KickScooter MAX-ni 3 soniyada osongina yig'ish va olib yurish mumkin.",
+    "Regenerative Brake for Power Recycle": "Quvvatni qayta ishlash uchun regenerativ tormoz",
+    "The innovative regenerative brake system turns Ninebot KickScooter MAX into an electric vehicle powered by electricity and recycled energy from riding. Energy will be collected from regenerative braking and distributed when you need a boost.": "Innovatsion regenerativ tormoz tizimi Ninebot KickScooter MAX-ni elektr energiyasi va haydashdan qayta ishlangan energiya bilan ishlaydigan elektr transport vositasiga aylantiradi. Energiya regenerativ tormozlashdan yig'iladi va kuchayishi kerak bo'lganda taqsimlanadi.",
+    "Easy One Cord Fast Charging": "Oson bir simli tez zaryadlash",
+    "The built-in charger lets riders recharge it easily when on the go without having to carry along a bulky charging adapter. 3A fast charge will give Ninebot KickScooter MAX a full charge in 6 hours.": "O‘rnatilgan zaryadlovchi qurilma haydovchilarga yo‘lda katta hajmli zaryadlovchi adapterni olib yurmasdan turib uni osonlik bilan zaryadlash imkonini beradi. 3A tez zaryadlash Ninebot KickScooter MAX ni 6 soat ichida to‘liq quvvatlantirish imkonini beradi.",
+    "3 Riding Modes": "3 ta haydash rejimi",
+    "Eco, Standard, and Sports modes can be directly accessed by the intuitive LED dashboard, which also displays maintenance signals, power levels, Bluetooth connectivity and more.": "Eko, standart va sport rejimlariga to'g'ridan-to'g'ri intuitiv LED asboblar paneli orqali kirish mumkin, u shuningdek texnik signallarni, quvvat darajalarini, Bluetooth ulanishini va boshqalarni ko'rsatadi."
 }
