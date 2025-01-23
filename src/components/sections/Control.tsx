@@ -1,12 +1,15 @@
+import { useTranslation } from "react-i18next"
 import { Alarm, Apple, Dashboard, PlaySotore, Settings, Status, Training, Upgrade } from "../../assets/Icons"
 import Image from '../../assets/images/app 1.png'
+import '../../i18n'
 
 const Control = () => {
+    const { t } = useTranslation()
     return (
         <div className='pt-[63px] bg-[#F5F5F5C9] mb-[64px]'>
             <div className="px-[176px] text-center mx-auto w-[77%]">
-                <h1 className='text-[50px] leading-[59px] font-bold text-[#323941] mb-[16px]'>Control from your smartphone</h1>
-                <p className='text-[18px] leading-[21px] text-[#323941]'>You can easily control your Segway electric scooter with your smartphone via Bluetooth. Not being the key to the kickscooter, it will give a signal in case of an attempt to steal. Check the current speed, data on the status of the device's systems or set the speed limit with a few touches. And the skating training program is indispensable for beginners.</p>
+                <h1 className='text-[50px] leading-[59px] font-bold text-[#323941] mb-[16px]'>{t("Control from your smartphone")}</h1>
+                <p className='text-[18px] leading-[21px] text-[#323941]'>{t("You can easily control your Segway electric scooter with your smartphone via Bluetooth. Not being the key to the kickscooter, it will give a signal in case of an attempt to steal. Check the current speed, data on the status of the device's systems or set the speed limit with a few touches. And the skating training program is indispensable for beginners.")}</p>
             </div>
             <div className="flex items-center justify-between pl-[347px] pr-[28px]">
                 <div>
