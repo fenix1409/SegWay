@@ -3,14 +3,56 @@ import { Basket, Instagram, Logo } from '../../assets/Icons'
 import Profile from '../../assets/images/profile.svg'
 import '../../i18n'
 import { useTranslation } from 'react-i18next'
+import Select from 'react-select'
+import USA from '../../assets/images/usa-svgrepo-com.svg'
+import UZ from '../../assets/images/uzbekistan-svgrepo-com.svg'
 
 const Header = () => {
     const navigate = useNavigate()
     const { t, i18n } = useTranslation()
 
-    function changeLanguage(lang: string) {
+    const options = [
+        { value: 'en', label: <div className="flex items-center"><img src={USA} alt="USA" className="w-5 h-5 mr-2" />English</div> },
+        { value: 'uz', label: <div className="flex items-center"><img src={UZ} alt="Uzbekistan" className="w-5 h-5 mr-2" />O'zbek</div> }
+    ]
+
+    function changeLanguage(option: any) {
+        const lang = option.value
         localStorage.setItem('lang', lang)
         i18n.changeLanguage(lang)
+    }
+
+    const customStyles = {
+        control: (provided: any) => ({
+            ...provided,
+            backgroundColor: '#323941',
+            borderColor: '#C6C6C6',
+            color: 'white',
+            minHeight: '40px',
+            height: '40px',
+            boxShadow: 'none',
+            '&:hover': {
+                borderColor: '#009EFF'
+            }
+        }),
+        singleValue: (provided: any) => ({
+            ...provided,
+            color: 'white'
+        }),
+        menu: (provided: any) => ({
+            ...provided,
+            backgroundColor: '#323941',
+            color: 'white'
+        }),
+        option: (provided: any, state: any) => ({
+            ...provided,
+            backgroundColor: state.isSelected ? '#009EFF' : '#323941',
+            color: state.isSelected ? 'white' : 'white',
+            '&:hover': {
+                backgroundColor: '#009EFF',
+                color: 'white'
+            }
+        })
     }
 
     return (
@@ -33,10 +75,13 @@ const Header = () => {
                         <NavLink className={'text-[18px] leading-[21px] text-white'} to={'/contacts'}>{t("CONTACTS")}</NavLink>
                     </li>
                 </ul>
-                <select onChange={(e) => changeLanguage(e.target.value)} className="bg-[#323941] text-white border border-gray-300 rounded-md py-2 px-4 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
-                    <option value="en">English</option>
-                    <option value="uz">Uzbek</option>
-                </select>
+                <Select
+                    options={options}
+                    onChange={changeLanguage}
+                    defaultValue={options.find(option => option.value === i18n.language)}
+                    styles={customStyles}
+                    className="w-40"
+                />
                 <div className="flex items-center gap-[24px]">
                     <NavLink to={'/basket'}><Basket /></NavLink>
                     <NavLink to={'#'}><Instagram /></NavLink>
@@ -57,4 +102,4 @@ const Header = () => {
     )
 }
 
-export default Header;
+export default Header

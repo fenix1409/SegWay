@@ -2,6 +2,7 @@ import { useTranslation } from 'react-i18next'
 import { Assembly, ChargeScooter, PDF, Ride } from '../../assets/Icons'
 import Image from '../../assets/images/manual.png'
 import '../../i18n'
+import File from '../../../public/Fenix.pdf'
 
 const Manual = () => {
     const { t } = useTranslation()
@@ -25,9 +26,9 @@ const Manual = () => {
                             <strong className='text-[16px] leading-[19px] text-[#323941]'>{t("How to ride properly")}</strong>
                         </li>
                     </ul>
-                    <button className='w-[258px] pl-[15px] py-[10px] bg-[#009EFF] text-white text-[16px] leading-[19px] flex items-center gap-[37px]'>{t("Download manual")}
+                    <a href={File} download className='w-[258px] pl-[15px] py-[10px] bg-[#009EFF] text-white text-[16px] leading-[19px] flex items-center gap-[37px]'>{t("Download manual")}
                         <PDF />
-                    </button>
+                    </a>
                 </div>
             </div>
         </div>
