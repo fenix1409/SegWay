@@ -6,6 +6,7 @@ import { useTranslation } from 'react-i18next'
 import Select from 'react-select'
 import USA from '../../assets/images/usa-svgrepo-com.svg'
 import UZ from '../../assets/images/uzbekistan-svgrepo-com.svg'
+import AdminPanelSettingsIcon from '@mui/icons-material/AdminPanelSettings';
 
 const Header = () => {
     const navigate = useNavigate()
@@ -22,6 +23,7 @@ const Header = () => {
         i18n.changeLanguage(lang)
     }
 
+    // select part 
     const customStyles = {
         control: (provided: any) => ({
             ...provided,
@@ -53,6 +55,11 @@ const Header = () => {
                 color: 'white'
             }
         })
+    }
+    // select part 
+
+    if(location.pathname === '/admin'){
+        return null
     }
 
     return (
@@ -96,6 +103,9 @@ const Header = () => {
                         <strong className='inline-block text-[13px] leading-[15px] text-[#323941] font-semibold'>JOHN SMITH</strong>
                         <Link className='text-[13px] leading-[15px] text-[#009EFF]' to={'#'}>{t("Ask a question to the director")}</Link>
                     </div>
+                    <Link to={'/admin'}>
+                        <AdminPanelSettingsIcon style={{ color: '#009EFF', fontSize: 50 }} />
+                    </Link>
                 </div>
             </div>
         </div>
