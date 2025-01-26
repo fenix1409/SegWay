@@ -1,8 +1,10 @@
 import { useState } from "react";
 import GetScooters from "./Scootes/getScooters";
+import GetAccessory from "./Accessories/getAccessory";
 
 const Admin = () => {
     const [showScooters, setShowScooters] = useState(false) 
+    const [showAccessory, setShowAccessory] = useState(false) 
 
   return (
     <div className="min-h-screen bg-gray-100 flex flex-col">
@@ -36,10 +38,11 @@ const Admin = () => {
           <div className="bg-white p-6 rounded-lg shadow-md">
             <h2 className="text-xl font-bold mb-4">Accessories</h2>
             <p className="text-gray-700">Generate Accessories.</p>
-            <button className="mt-4 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">View Accessories</button>
+            <button className="mt-4 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700" onClick={() => setShowAccessory(!showAccessory)}>View Accessories</button>
           </div>
         </div>
         {showScooters && <GetScooters/>}
+        {showAccessory && <GetAccessory/>}
       </main>
       <footer className="bg-gray-800 text-white py-4">
         <div className="container mx-auto px-4 text-center">
