@@ -77,7 +77,8 @@ const AddModal: React.FC<AddModalProps> = ({ isOpen, onRequestClose, scooterEdit
             'Content-Type': 'application/json',
           }
         })
-      } else {
+      } 
+      else {
         return instance().post('/scooters', newScooter, {
           headers: {
             'Content-Type': 'application/json'
